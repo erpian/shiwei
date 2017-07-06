@@ -47,8 +47,16 @@
 	//周志鑫
 	var point_zzx = new BMap.Point(116.379422,40.027194)
 	map.addOverlay(new BMap.Marker(point_zzx));
-	map.addOverlay(new BMap.Label("周志鑫", {
+	map.addOverlay(new BMap.Label("周志鑫、陈俊阳", {
 	  position : point_zzx,    
+	  offset   : new BMap.Size(10, -30)    
+	}));  
+	
+	//李超
+	var point_lc = new BMap.Point(116.323281,40.07925)
+	map.addOverlay(new BMap.Marker(point_lc));
+	map.addOverlay(new BMap.Label("李超", {
+	  position : point_lc,    
 	  offset   : new BMap.Size(10, -30)    
 	}));  
 </script>
