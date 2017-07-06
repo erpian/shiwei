@@ -27,5 +27,28 @@
 	});
 	
 	//石炜
-	map.addOverlay(new BMap.Marker(new BMap.Point(116.315804,39.972191)));
+	var point_shiwei = new BMap.Point(116.315804,39.972191)
+	map.addOverlay(new BMap.Marker(point_shiwei));
+	var opts = {
+	  position : point_shiwei,    // 指定文本标注所在的地理位置
+	  offset   : new BMap.Size(10, -30)    //设置文本偏移量
+	}
+	var label = new BMap.Label("石炜", opts);
+	map.addOverlay(label);  
+
+	//陶冶
+	var point_taoye = new BMap.Point(116.420601,39.852132)
+	map.addOverlay(new BMap.Marker(point_taoye));
+	map.addOverlay(new BMap.Label("陶冶", {
+	  position : point_taoye,    
+	  offset   : new BMap.Size(10, -30)    
+	}));  
+	
+	//周志鑫
+	var point_zzx = new BMap.Point(116.379422,40.027194)
+	map.addOverlay(new BMap.Marker(point_zzx));
+	map.addOverlay(new BMap.Label("周志鑫", {
+	  position : point_zzx,    
+	  offset   : new BMap.Size(10, -30)    
+	}));  
 </script>
